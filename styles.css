@@ -1,0 +1,198 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+}
+
+.logo {
+  margin-left: 150px;
+}
+
+.nav-sections {
+  display: flex;
+  gap: 50px;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.auth-buttons button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+}
+
+.auth-buttons button:nth-child(1) {
+  background-color: #000000;
+  color: #ffe000;
+  border: 2px solid #ffe000;
+  margin-right: 20px;
+}
+
+.auth-buttons button:nth-child(2) {
+  background-color: #ffe000;
+  color: #000;
+  border: 2px solid #ffe000;
+}
+
+.auth-buttons button:hover {
+  background-color: #ffffff;
+  color: #333;
+}
+
+.split-container {
+  display: flex;
+  height: calc(100vh - 70px); /* Altura ajustada restando el header */
+}
+
+.login-container {
+  width: 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+}
+
+.image-container {
+  width: 50%;
+  background-image: url("images/sebastiaan-stam-EOYnbWZDyOk-unsplash 1.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.login-container p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #ccc;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px 0;
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="password"] {
+  width: 100%;
+  padding: 12px 0;
+  margin: 10px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  color: #aaa;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border-bottom: 1px solid #ffe000;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Estilo del icono en la contraseÃ±a */
+.password-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+  font-size: 18px;
+}
+
+.password-container {
+  position: relative;
+  width: 100%;
+}
+
+/* .password-container input[type="password"] {
+  padding-right: 40px;
+} */
+
+/* Estilo para el boton de "Aceptar" */
+.submit-btn {
+  background-color: #d3d3d3;
+  color: #4d4d4d;
+  padding: 12px 100px; /* Tamaño del boton*/
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Estilo para el boton de registro */
+.registro-btn {
+  background-color: black;
+  color: #ffe000;
+  padding: 12px 10px;
+  border-radius: 20px;
+  border: 2px solid #ffe000;
+  width: 36%;
+  box-sizing: border-box;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.recover-password {
+  color: #fff;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  margin-top: 20px;
+}
+
+.recover-password:hover {
+  color: #ffe000;
+}
