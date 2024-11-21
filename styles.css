@@ -34,6 +34,10 @@ header {
   font-size: 14px;
 }
 
+.nav-link:hover {
+  color: #ffe000;
+}
+
 .auth-buttons {
   display: flex;
   gap: 10px;
@@ -102,18 +106,7 @@ h2 {
   color: #ccc;
 }
 
-input[type="text"] {
-  width: 100%;
-  padding: 12px 0;
-  margin: 10px 0;
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #ccc;
-  color: #fff;
-  font-size: 16px;
-  outline: none;
-}
-
+input[type="text"],
 input[type="password"] {
   width: 100%;
   padding: 12px 0;
@@ -137,7 +130,6 @@ input[type="password"]:focus {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* Estilo del icono en la contraseÃ±a */
 .password-icon {
   position: absolute;
   right: 10px;
@@ -153,15 +145,10 @@ input[type="password"]:focus {
   width: 100%;
 }
 
-/* .password-container input[type="password"] {
-  padding-right: 40px;
-} */
-
-/* Estilo para el boton de "Aceptar" */
 .submit-btn {
   background-color: #d3d3d3;
   color: #4d4d4d;
-  padding: 12px 100px; /* Tamaño del boton*/
+  padding: 12px 100px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -170,7 +157,11 @@ input[type="password"]:focus {
   text-align: center;
 }
 
-/* Estilo para el boton de registro */
+.submit-btn:hover {
+  background-color: #ffe000;
+  color: #000;
+}
+
 .registro-btn {
   background-color: black;
   color: #ffe000;
@@ -185,6 +176,11 @@ input[type="password"]:focus {
   text-align: center;
 }
 
+.registro-btn:hover {
+  background-color: #ffe000;
+  color: black;
+}
+
 .recover-password {
   color: #fff;
   text-decoration: underline;
@@ -195,4 +191,55 @@ input[type="password"]:focus {
 
 .recover-password:hover {
   color: #ffe000;
+}
+
+@media (max-width: 940px) {
+  .split-container {
+    flex-direction: column;
+  }
+
+  .login-container,
+  .image-container {
+    width: 100%;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  .nav-sections {
+    gap: 20px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-buttons button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  .auth-buttons {
+    gap: 5px;
+  }
+
+  .submit-btn {
+    padding: 10px 50px;
+  }
+
+  .registro-btn {
+    width: 100%;
+  }
 }
